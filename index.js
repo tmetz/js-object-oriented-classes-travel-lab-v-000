@@ -30,7 +30,7 @@ class Route {
 
     blocksTravelled() {
       let verticalBlocks = Number(this.endingLocation.vertical) - Number(this.beginningLocation.vertical);
-      
+
     }
   }
 }
