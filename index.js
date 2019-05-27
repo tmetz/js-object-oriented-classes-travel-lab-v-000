@@ -34,4 +34,13 @@ class Route {
     let horizontalBlocks = eastWest.indexOf(this.endingLocation.horizontal) - eastWest.indexOf(this.beginningLocation.horizontal);
     return Math.abs(verticalBlocks) + Math.abs(horizontalBlocks);
   }
+
+  estimatedTime(peakTime=false) {
+    if (peakTime) {
+      return this.blocksTravelled * 2;
+    }
+    else {
+      return this.blocksTravelled * 3;
+    }
+  }
 }
