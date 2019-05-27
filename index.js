@@ -27,10 +27,10 @@ class Route {
   constructor(beginningLocation, endingLocation) {
     this.beginningLocation = beginningLocation;
     this.endingLocation = endingLocation;
+  }
 
-    blocksTravelled() {
-      let verticalBlocks = Number(this.endingLocation.vertical) - Number(this.beginningLocation.vertical);
+  blocksTravelled() {
+    let verticalBlocks = Number(this.endingLocation.vertical) - Number(this.beginningLocation.vertical);
 
-    }
   }
 }
